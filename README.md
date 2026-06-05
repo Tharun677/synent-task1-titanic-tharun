@@ -1,90 +1,66 @@
-# Titanic Data Cleaning & Preprocessing
+# Titanic Data Cleaning and Preprocessing
 
-## 📌 Project Overview
-This project focuses on cleaning and preprocessing the Titanic dataset to make it ready for analysis and machine learning applications. Data cleaning is an essential step in the Data Science workflow, as raw datasets often contain missing values, duplicate records, and inconsistent formats.
+## About the Project
 
-## 🎯 Objective
-The objective of this project is to:
-- Handle missing values
-- Remove duplicate records
-- Rename columns for better readability
-- Convert data types where necessary
-- Prepare a clean dataset for further analysis
+This project was completed as part of my Data Science Internship at Synent Technologies.
 
-## 📂 Dataset
-Dataset Used: Titanic Dataset
+The goal of this project was to clean and prepare the Titanic dataset for analysis. Real-world datasets often contain missing values, duplicate records, and columns that need proper formatting. In this project, I performed various preprocessing techniques to make the dataset clean and ready for further analysis.
+
+## Dataset
+
+Titanic Dataset
 
 Source:
 https://www.kaggle.com/datasets/yasserh/titanic-dataset
 
-## 🛠️ Tools & Technologies
-- Python
+## What I Did
+
+- Loaded the dataset using Pandas
+- Explored the dataset structure
+- Checked for missing values
+- Filled missing values in the Age column using the median
+- Filled missing values in the Embarked column using the most frequent value
+- Removed the Cabin column because it had too many missing values
+- Checked and removed duplicate records
+- Renamed columns for better readability
+- Converted categorical columns to appropriate data types
+- Saved the cleaned dataset as a new CSV file
+
+## Libraries Used
+
 - Pandas
 - NumPy
+
+## Tools Used
+
 - Google Colab
 - GitHub
 
-## 📋 Steps Performed
+## Files Included
 
-### 1. Data Loading
-- Imported the dataset into Google Colab using Pandas.
+- Titanic_Data_Cleaning.ipynb → Jupyter Notebook containing all preprocessing steps
+- Titanic_Cleaned.csv → Final cleaned dataset
+- README.md → Project documentation
 
-### 2. Data Inspection
-- Examined dataset shape
-- Viewed column names
-- Checked data types and missing values
+## What I Learned
 
-### 3. Missing Value Handling
-- Filled missing values in the `Age` column using the median value.
-- Filled missing values in the `Embarked` column using the mode value.
-- Removed the `Cabin` column due to a large number of missing values.
-
-### 4. Duplicate Removal
-- Checked for duplicate rows.
-- Removed duplicate records if present.
-
-### 5. Column Renaming
-- Renamed columns to improve readability:
-  - PassengerId → Passenger_ID
-  - Pclass → Passenger_Class
-  - Sex → Gender
-
-### 6. Data Type Conversion
-- Converted categorical columns into category data type:
-  - Survived
-  - Gender
-  - Embarked
-
-### 7. Dataset Export
-- Saved the cleaned dataset as `Titanic_Cleaned.csv`.
-
-## 📊 Output
-The final output is a cleaned and structured Titanic dataset that is ready for:
-- Exploratory Data Analysis (EDA)
-- Data Visualization
-- Machine Learning
-
-## 📁 Repository Structure
-
-```text
-synent-task1-titanic-tharun
-│
-├── Titanic_Data_Cleaning.ipynb
-├── Titanic_Cleaned.csv
-└── README.md
-```
-
-## 🚀 Learning Outcomes
 Through this project, I learned:
-- Data cleaning techniques
-- Handling missing values
-- Removing duplicates
-- Working with Pandas DataFrames
-- Data preprocessing fundamentals
-- Using Google Colab for Data Science projects
-- Managing projects using GitHub
 
-## 👨‍💻 Author
+- How to load and inspect datasets
+- How to handle missing values
+- How to remove duplicate records
+- How to work with different data types
+- Basic data preprocessing techniques
+- Using Google Colab for Data Science projects
+- Uploading projects to GitHub
+
+## Conclusion
+
+After completing the cleaning process, the Titanic dataset became more structured and suitable for analysis and machine learning tasks. This project helped me understand the importance of data preprocessing in the Data Science workflow.
+
+## Author
+
 Tharun
 
-Data Science Intern – Synent Technologies
+Data Science Intern
+Synent Technologies
